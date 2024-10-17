@@ -1,0 +1,92 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 400px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profile-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.link {
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #0073ff;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.link:hover {
+    background-color: #0057b7;
+}
+
+.customization {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#changeColor, #bgColorPicker {
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#uploadImage {
+    display: block;
+    margin: 0 auto;
+}
+
+.login, .add-link {
+    margin-top: 20px;
+}
+
+.login form, .add-link form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.loginMessage {
+    margin-top: 10px;
+    color: green;
+}
