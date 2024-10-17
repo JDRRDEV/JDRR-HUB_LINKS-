@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JDRR LinkTree</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="img/profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+            <h1 class="profile-name">Your Name</h1>
+            <p class="profile-description">A short bio about yourself.</p>
+        </div>
+        
+        <div class="links" id="linkContainer">
+            <!-- Enlaces se agregarán aquí -->
+        </div>
+
+        <div class="customization">
+            <label for="bgColorPicker">Select Background Color:</label>
+            <input type="color" id="bgColorPicker">
+            <br>
+
+            <button id="changeColor">Toggle Dark/Light Theme</button>
+            <input type="file" id="uploadImage" accept="image/*" />
+        </div>
+
+        <div class="login">
+            <h2>Create Account</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" required><br>
+
+                <button type="submit">Create Account</button>
+            </form>
+
+            <div id="loginMessage"></div>
+        </div>
+
+        <div class="add-link">
+            <h2>Add a New Link</h2>
+            <form id="linkForm">
+                <label for="linkName">Link Name:</label>
+                <input type="text" id="linkName" required>
+
+                <label for="linkURL">Link URL:</label>
+                <input type="url" id="linkURL" required>
+
+                <label for="linkImage">Link Image URL:</label>
+                <input type="url" id="linkImage" required>
+
+                <button type="submit">Add Link</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+          </html>
